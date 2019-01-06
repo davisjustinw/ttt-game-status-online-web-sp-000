@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
   
 def won?(board)
   WIN_COMBINATIONS.detect do |combo|
-    binding.pry
-    combo.all? {|item| item == combo[0]} && (combo[0] == 'X' || combo[0] == 'O')
+    #binding.pry
+    combo.all? {|item| board[item] == board[combo[0]]} && (board[combo[0]] == 'X' || board[combo[0]] == 'O')
   end
 end
