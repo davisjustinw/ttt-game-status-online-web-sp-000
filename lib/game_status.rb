@@ -18,7 +18,6 @@ WIN_COMBINATIONS = [
   
 def won?(board)
   WIN_COMBINATIONS.detect do |combo|
-    
-    #combo.uniq.length
+    combo.all? {|item| item == combo[0]}
   end
 end
