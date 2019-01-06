@@ -18,6 +18,6 @@ WIN_COMBINATIONS = [
   
 def won?(board)
   WIN_COMBINATIONS.detect do |combo|
-    combo.all? {|item| item == combo[0]}
+    combo.all? {|item| item == combo[0]} && (combo[0] == 'X' || combo[0] == 'O')
   end
 end
