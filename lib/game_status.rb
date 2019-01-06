@@ -21,3 +21,7 @@ def won?(board)
     combo.all? {|item| board[item] == board[combo[0]]} && (board[combo[0]] == 'X' || board[combo[0]] == 'O')
   end
 end
+
+def full?(board)
+  
+end
